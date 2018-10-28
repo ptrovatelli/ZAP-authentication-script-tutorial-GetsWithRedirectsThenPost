@@ -4,7 +4,7 @@ This is a tutorial to set up a ZAP Authentication script that handles several GE
 
 A php back-end is provided for testing purposes.
 
-The ZAP script required can be found at https://github.com/zaproxy/community-scripts/tree/master/authentication (or https://github.com/zaproxy/community-scripts/pull/124 if not merged yet)
+The ZAP script required can be found at https://github.com/zaproxy/community-scripts/tree/master/authentication/ (or https://github.com/ptrovatelli/community-scripts/blob/authenticationGetsWithRedirect/authentication/GetsWithRedirectThenPost.js if not merged yet)
 
 ## php example authentication scheme description
 In order to authenticate, the user needs to GET /get1.php, follow redirects then post on post.php by clicking the "Login" button. This is what happens in details:
