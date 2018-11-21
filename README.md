@@ -45,7 +45,7 @@ The php script also logs information in apache log file /var/log/apache2/error.l
     * select GetsWithRedirectThenPost then click "load"
     * "username field": username (doesn't really matter for us; this is the parameter name that will be used to provide the credential in post.php)
     * "password field": password (same remark)
-    * "Fist get URI with leading slash, without trailing slash": /test/get1.php
+    * "First get URI with leading slash, without trailing slash": /test/get1.php
     * "Hostname without trailing slash": https://myhostname.com
     * Regex pattern identified in Logged in response message: leave empty
     * Regex pattern identified in Logged out response message: Authentification error
@@ -106,7 +106,7 @@ Every new minute, the same sequence described above should produce.
 This script uses sendAndReceive with 2nd parameter false in order not to follow automatically redirects: this allows us to manually add the redirect request/responses in ZAP history, making it much easier to understand what is going on. 
 With followRedirect=true, all request/responses and their cookies are aggregated in a single line in ZAP history tab.
 When getting get1.php, this is what would be displayed (as of ZAP 2.7.0):
-* URL: get1.php (the fist redirect location)
+* URL: get1.php (the first redirect location)
 * Request 
     * cookies: get2Cookie, get3Cookie
 * Response 
